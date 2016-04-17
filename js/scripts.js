@@ -7,18 +7,15 @@ $("#findPrimes").click(function() {
   for(i=1; i<=yourNumber; i++) {
     yourPrimes.push(i);
   }
-  //for(i=1; i<=yourPrimes.length; i++) {
-    yourPrimes.forEach(function() {
+  for(i=1; i<=yourPrimes.length; i++) {
+      prime=yourPrimes[i];
       var filtered=yourPrimes.filter(isPrime);
       yourPrimes=filtered;
-    });
-    //alert(yourPrimes[i]);
-  //}
-
+  }
 
   $("#results").text(yourPrimes);
 
   function isPrime(value) {
-    return value %prime !== 0 && value!== prime;
+    return value %prime !== 0 || value=== prime;
   }
 });
