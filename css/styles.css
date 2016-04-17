@@ -1,0 +1,17 @@
+body {
+  background-color: #00479d;
+}
+h1 {
+  background-color: #503400;
+  color: white;
+  font-size: 4em;
+  line-height: 4em;
+  text-align: center;
+  font-family: Georgia, serif;
+  border-radius: 25px;
+}
+
+div {
+  background-color: white;
+  color: #503400;
+}
