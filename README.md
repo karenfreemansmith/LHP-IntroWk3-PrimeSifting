@@ -17,7 +17,7 @@ __*A webpage that finds prime numbers.*__
 For questions or comments, please __email [Karen](karenfreemansmith@gmail.com)__
 
 ### Known Issues
-*
+* For large numbers, the results will overflow instead of wrap
 
 ### Technologies Used
 ###### HTML, CSS, Bootstrap, JavaScript, jQuery
