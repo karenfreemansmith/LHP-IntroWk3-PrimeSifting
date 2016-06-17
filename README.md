@@ -1,7 +1,7 @@
 # [Prime Sifting](http://karenfreemansmith.github.io/primeshifting)
 ![project screenshot](/img/screenshot.jpg)
 
-__Version 1: April 16, 2016__
+__Version 2: June 17, 2016__
 ## by [Karen Freeman-Smith](http://karenfreemansmith.github.io)
 
 ### Description
@@ -17,7 +17,7 @@ __*A webpage that finds prime numbers.*__
 For questions or comments, please __email [Karen](karenfreemansmith@gmail.com)__
 
 ### Known Issues
-* For large numbers, the results will overflow instead of wrap
+* Page is really slow with numbers over about 50,000
 
 ### Technologies Used
 ###### HTML, CSS, Bootstrap, JavaScript, jQuery
