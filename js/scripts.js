@@ -1,21 +1,29 @@
 //alert("jQuery is working on " + $("h1").text()); //test for jQuery linked and loaded correctly
+function isPrime(x) {
+  for(var i=2; i<x; i++) {
+    if(x%i===0) {
+      return false;
+    }
+  }
+  return true;
+}
+
+function findPrimes(x) {
+  var primes=[];
+  for(var i=1; i<x; i++) {
+    if(isPrime(i)) {
+      primes.push(i);
+    }
+  }
+  return primes;
+}
 
 $("#findPrimes").click(function() {
-  var yourPrimes=[];
-  var prime=2;
-  var yourNumber=parseInt($("#primesTo").val());
-  for(i=1; i<=yourNumber; i++) {
-    yourPrimes.push(i);
-  }
-  for(i=1; i<=yourPrimes.length; i++) {
-      prime=yourPrimes[i];
-      var filtered=yourPrimes.filter(isPrime);
-      yourPrimes=filtered;
-  }
+  var resultsText="";
+  var yourPrimes=findPrimes(parseInt($("#primesTo").val()));
 
-  $("#results").text(yourPrimes);
-
-  function isPrime(value) {
-    return value %prime !== 0 || value=== prime;
-  }
+  yourPrimes.forEach(function(prime) {
+    resultsText += prime + ", ";
+  });
+  $("#results").text(resultsText);
 });
